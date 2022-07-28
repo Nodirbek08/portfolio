@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.a{
+    margin: 5px 5px 0 5px ;
+    line-height: 45px;
+    color: #fcfc;
+    width: 99%;
+    height: 500px;
+    background-image: url('../images/fda00d02584b193ce1e4f0ba6287c5e2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.a, .b, .c{
+    box-shadow: 10px 5px 10px blue,
+    -10px -5px 10px red ;
+}
+p:hover{
+    text-shadow: 10px 5px 10px blue;
+}
+
+.b{
+    margin: 0px 5px 0 5px;
+    line-height: 45px;
+    color: #fcfc;
+    height: 500px;
+    width: 99%;
+    background-image: url('../images/modern-gold-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.c{
+    margin: 0 5px 5px 5px;
+    line-height: 45px;
+    color: #fcfc;
+    width: 99%;
+    height: 500px;
+    background-image: url('../images/pexels-photo-3308588.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+h5:hover{
+    text-shadow: 20px 20px 1px red;
+}
+
+i {
+    font-size: 50px;
+    display: block;
+    color: #f9004d;
+}
+
+ i:hover{
+    box-shadow: 10px 10px 2px blue;
+ }
+
+
+img{
+    height: 1000px;
+    width: 100%;
+    padding: 5px;
+ }
+
