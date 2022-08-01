@@ -16,7 +16,7 @@
     background-position: center;
 }
 
-nav {
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,25 +30,41 @@ nav {
     cursor: pointer;
 }
 
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    margin-left: 24px;
+    cursor: pointer;
+    display: none;
+}
+
 span {
     color: #f9004d;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
-    font-weight: 700;
+.menu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    transition: all 0.5s;
 }
 
-nav ul li a {
+.menu li {
+    list-style-type: none;
+    font-weight: 700;
+    /* padding: 10px 25px; */
+    flex: 1;
+    text-align: center;
+}
+
+.menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
+.menu li a:hover {
     color: #f9004d;
     transform: .4s;
 }
@@ -62,6 +78,7 @@ nav ul li a:hover {
     padding: 10px 25px;
     border-radius: 30px;
     transition: transform .4s;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -145,6 +162,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 25px;
 }
 
 .about-text h2 {
@@ -205,19 +223,16 @@ button:hover {
 .box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
     min-height: 400px;
 }
 
 .card {
-    height: 365px;
+    min-height: 365px;
     width: 335px;
     padding: 30px;
     background: #191919;
     border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -271,7 +286,6 @@ h5 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .contact-me p {
@@ -317,7 +331,7 @@ footer p:nth-child(1) {
 
 }
 
-footer p:nth-child(2){
+footer p:nth-child(2) {
     color: white;
     font-size: 17px;
     width: 500px;
@@ -326,11 +340,11 @@ footer p:nth-child(2){
 
 }
 
-.social{
+.social {
     display: flex;
 }
 
-.social a{
+.social a {
     width: 45px;
     height: 45px;
     display: flex;
@@ -344,15 +358,60 @@ footer p:nth-child(2){
     font-size: 20px;
 }
 
-.social a:hover{
+.social a:hover {
     transform: scale(1.4);
     transition: .3s;
 
 }
 
-.end{
+.end {
     position: absolute;
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
 }
+
+/* TABLET */
+@media screen and (max-width: 991.9px) {
+
+    .navigation{
+        position: relative;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+
+    .menu{
+        /* display: none; */
+        display: block;
+        border: 2px solid red;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        padding: 24px 50px;
+        height: 100vh;
+        background-color: #191919;
+        z-index: 10;
+    }
+    
+    .menu>li{
+        text-align: left;
+        line-height: 300%;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767.9px) {}
+
+
+
+/* 
+BREAK POINTS:
+
+1200px > Desktop >= 992px
+992px > Tablet >= 768px
+768px > Mobile >= 375px
+375px > Small Device 
+
+*/

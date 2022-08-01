@@ -1,51 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-*{
-    margin: 0 auto;
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+    background-color: black;
+    padding: 16px;
+}
 
-.a{
-    margin: 5px 5px 0 5px ;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8% 0;
+}
+
+.logo>a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+span {
+    color: #f9004d;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 700;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transform: .4s;
+}
+
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.create {
+    /* margin: 5px 5px 0 5px ; */
     line-height: 45px;
-    color: #fcfc;
-    width: 99%;
-    height: 500px;
-    background-image: url('../images/fda00d02584b193ce1e4f0ba6287c5e2.jpg');
+    color:rgba(216, 100, 12, 0.8);
+    /* width: 99%; */
+    /* height: 500px; */
+
+}
+
+#a, #b, #c {
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+    padding: 30px 50px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    box-shadow: 10px 5px 10px blue,
+        -10px -5px 10px red;
 }
 
-.a, .b, .c{
-    box-shadow: 10px 5px 10px blue,
-    -10px -5px 10px red ;
+.create {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/fda00d02584b193ce1e4f0ba6287c5e2.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
 }
-p:hover{
+
+.figma {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/modern-gold-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+.freelance {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-photo-3308588.webp');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item {
+    flex: 4;
+    /* box-shadow: 10px 5px 10px blue,
+    -10px -5px 10px red ; */
+    padding: 25px;
+}
+
+p:hover {
     text-shadow: 10px 5px 10px blue;
 }
 
-.b{
-    margin: 0px 5px 0 5px;
+.figma {
+    /* margin: 0px 5px 0 5px; */
     line-height: 45px;
-    color: #fcfc;
-    height: 500px;
-    width: 99%;
-    background-image: url('../images/modern-gold-background-free-vector.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    color: rgba(216, 100, 12, 0.8);
+    /* height: 500px; */
+    /* width: 99%; */
+
 }
 
-.c{
-    margin: 0 5px 5px 5px;
+.freelance {
+    /* margin: 0 5px 5px 5px; */
     line-height: 45px;
-    color: #fcfc;
-    width: 99%;
-    height: 500px;
-    background-image: url('../images/pexels-photo-3308588.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    color: rgba(216, 100, 12, 0.8);
+    /* width: 99%; */
+    /* height: 500px; */
+
 }
 
 h5 {
@@ -56,7 +152,7 @@ h5 {
     text-transform: capitalize;
 }
 
-h5:hover{
+h5:hover {
     text-shadow: 20px 20px 1px red;
 }
 
@@ -66,14 +162,27 @@ i {
     color: #f9004d;
 }
 
- i:hover{
+i:hover {
     box-shadow: 10px 10px 2px blue;
- }
+}
 
+.article-img {
+    flex: 3;
+    padding: 20px;
+    background-color:  #f9004d;
+}
 
-img{
-    height: 1000px;
+.article-img>img {
     width: 100%;
-    padding: 5px;
- }
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 110px blue ,
+                 -10px -10px 110px blue;
+}
 
+.item p {
+    font-size: 20px;
+}
