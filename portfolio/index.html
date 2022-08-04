@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nodirbek - portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,9 +16,10 @@
 
     <nav>
         <h2 class="logo">
-            <a href="../index.html">Portfo<span>lio</span></a> 
+            <a href="../index.html">Portfo<span>lio</span></a>
         </h2>
-        <ul>
+        <i class="fa-solid fa-bars" id="toggler" onclick="showMenu()"></i>
+        <ul id="menu" class="menu" onclick="showMenu()">
             <li><a href="#a">Veb Sayt Yaratish</a></li>
             <li><a href="#b">Figmadan Loyihalarni Desktopga Chiqarish</a></li>
             <li><a href="#c">Frilanserlik</a></li>
@@ -29,8 +30,8 @@
         <div class="item create">
             <i class="fa-solid fa-desktop"></i>
             <h5>Veb Sayt Yaratish</h5>
-            <p>
-                Men ajoyib va qiziqarli veb sayt yaratib bera olaman... <br>
+            <p id="text">
+                <span onclick="downText()">Men ajoyib va qiziqarli veb sayt yaratib bera olaman...</span> <br>
                 1. Professionallarga buyurtma berish. Eng oddiy usul. Bu usulda siz biror veb studiya yoki frilanserga
                 murojaat qilasiz, saytga qo'yildigan talablarni to'liq aytib o'tasiz. Ular sizga talablaringizdan kelib
                 chiqgan holda, narxini va qanchada tayyor bo'lishini aytishadi(arzon bo'lmasligi aniq). Agar rozi
@@ -62,8 +63,8 @@
         <div class="item figma">
             <i class="fa-brands fa-figma"></i>
             <h5>Figmadan Loyihalarni Desktopga Chiqarish</h5>
-            <p>
-                Men bergan loyihangizni o'zingiz hohlaganday desktop saytingizga chiqarib bera oloman... <br>
+            <p id="text1">
+                <span onclick="downText1()"> Men bergan loyihangizni sayt qilib bera oloman...</span> <br>
                 Veb dizaynerlar uchun juda ko'plab grafik tahrirlovchi dasturlar mavjud, ular orasida Figma online
                 grafik
                 tahrirlovchisi juda muhum o'rinlardan birini egallagan deyish mumkin. O'zbekistonda IT sohasini
@@ -86,8 +87,8 @@
         <div class="item freelance">
             <i class="fa-solid fa-people-arrows"></i>
             <h5>Frilanserlik</h5>
-            <p>
-                Men masofadandan turib ishlay olaman... <br>
+            <p id="text2">
+                <span onclick="downText2()"> Men masofadandan turib ishlayman... </span><br><br>
                 Firlanserlar - qo'shimcha yoki to'liq ish vaqti rejimida kasbi, tajribasi va qobilyatlaridan kelib
                 chiqqan
                 holda online yoki ofline tarzda o'z xizmatlarini taklif etuvchi mutaxassis, oddiy qilib aytganda qisqa

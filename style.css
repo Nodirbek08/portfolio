@@ -3,13 +3,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'josefin sans', serif;
+    font-family: 'Josefin sans', serif;
     box-sizing: border-box;
 }
 
 .hero {
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     background-image: url(./images/https___avatars.mds.yandex.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-.fa-bars{
+.fa-bars {
     color: white;
     font-size: 30px;
     margin-left: 24px;
@@ -111,14 +111,13 @@ h4 {
 }
 
 .newsletter form {
-    width: 380px;
-    max-width: 100%;
+    max-width: 380px;
     position: relative;
 }
 
 .newsletter form input:first-child {
     display: inline-block;
-    width: 100%;
+    max-width: 100%;
     padding: 14px 130px 14px 15px;
     border: 2px solid #f9004d;
     outline: none;
@@ -141,23 +140,22 @@ h4 {
 }
 
 .about {
-    width: 100%;
+    max-width: 100%;
     padding: 100px 0;
     background-color: #191919;
 }
 
 .about img {
     height: auto;
-    width: 430px;
+    max-width: 430px;
 }
 
 .about-text {
-    width: 550px;
+    max-width: 550px;
 }
 
 .main {
-    width: 1130px;
-    max-width: 95%;
+    max-width: 1130px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -207,7 +205,7 @@ button:hover {
 
 .services {
     background: #101010;
-    width: 100%;
+    max-width: 100%;
     padding: 100px 0;
 }
 
@@ -229,7 +227,7 @@ button:hover {
 
 .card {
     min-height: 365px;
-    width: 335px;
+    max-width: 335px;
     padding: 30px;
     background: #191919;
     border-radius: 20px;
@@ -279,7 +277,7 @@ h5 {
 }
 
 .contact-me {
-    width: 100%;
+    max-width: 100%;
     height: 290px;
     background: #191919;
     display: flex;
@@ -293,6 +291,7 @@ h5 {
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .contact-me .button-two {
@@ -314,7 +313,7 @@ h5 {
 
 footer {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 400px;
     background: #101010;
     display: flex;
@@ -334,7 +333,7 @@ footer p:nth-child(1) {
 footer p:nth-child(2) {
     color: white;
     font-size: 17px;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
     line-height: 26px;
 
@@ -374,15 +373,19 @@ footer p:nth-child(2) {
 /* TABLET */
 @media screen and (max-width: 991.9px) {
 
-    .navigation{
+    .navigation {
         position: relative;
     }
 
-    .fa-bars{
+    .fa-bars {
         display: block;
     }
 
-    .menu{
+    .about-text h2 {
+        font-size: 70px;
+    }
+
+    .menu {
         /* display: none; */
         display: block;
         border: 2px solid red;
@@ -394,16 +397,310 @@ footer p:nth-child(2) {
         background-color: #191919;
         z-index: 10;
     }
-    
-    .menu>li{
+
+    .menu>li {
         text-align: left;
         line-height: 300%;
     }
 }
 
 /* MOBILE */
-@media screen and (max-width: 767.9px) {}
+@media screen and (max-width: 767.9px) {
 
+    .hero {
+        max-width: 100%;
+    }
+
+    .navigation {
+        position: relative;
+        max-width: 100%;
+        padding: 15px 1px 0;
+
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .fa-bars {
+        margin-left: 10px;
+        font-size: 25px;
+        display: block;
+    }
+
+    .menu {
+        /* display: none; */
+        display: block;
+        border: 2px solid red;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        padding: 19px 30px;
+        height: 100vh;
+        background-color: #191919;
+        z-index: 10;
+        margin: 0 auto;
+    }
+
+    .menu>li {
+        text-align: left;
+        line-height: 300%;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        transform: translateY(-50%);
+    }
+
+    h1 {
+        margin: 10px 0;
+        font-size: 65px;
+    }
+
+    h3 {
+        font-style: 25px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .about {
+        max-width: 100%;
+        padding: 100px 0;
+        background-color: #191919;
+    }
+
+    .about img {
+        height: auto;
+        max-width: 200px;
+    }
+
+    .about-text {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 365px;
+        gap: 20px;
+    }
+
+    .about-text h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .about-text h5 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        text-align: center;
+        max-width: 340px;
+        line-height: 20px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        padding: 13px 30px;
+        text-align: center;
+        margin: 0 20%;
+    }
+
+    .services {
+        max-width: 100%;
+        padding: 100px 0;
+    }
+
+    .title h2 {
+        font-size: 35px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .box {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        min-height: 400px;
+    }
+
+    .contact-me p {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 17px;
+        max-width: 300px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+    .end {
+        bottom: 40px;
+        font-size: 14px;
+    }
+
+}
+/* small device */
+@media screen and (max-width:374.9px){
+    .navigation{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .logo{
+        order: -2;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .btn{
+        order: 1;
+    }
+    .btn{
+        padding: 5px 10px;
+        margin: 25px 0;
+        font-size: 10px;
+    }
+    .fa-bars{
+        font-size: 18px;
+    }
+    .menu {
+        top: 0;
+        left: -100%;
+        padding: 19px 25px;
+        height: 100vh;
+        z-index: 10;
+    }
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        transform: translateY(-50%);
+    }
+    h1 {
+        margin: 5px 0;
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+    .about {
+        max-width: 100%;
+        padding: 100px 0;
+    }
+    .about img {
+        height: auto;
+        max-width: 150px;
+    }
+    .about-text {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+
+    .main {
+        max-width: 374.9px;
+        gap: 15px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .about-text h5 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        line-height: 15px;
+        font-size: 13px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 0 20%;
+        font-size: 10px;
+    }
+    .title h2 {
+        font-size: 25px;
+        margin: 15px auto;
+    }
+    .box {
+        padding: 0 20px;
+        gap: 25px;
+        min-height: 300px;
+    }
+
+    .contact-me p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 10px;
+        line-height: 20px;
+
+    }
+
+    footer p:nth-child(1) {
+        font-size: 20px;
+        margin-bottom: 15px;
+    
+    }
+    .end {
+        bottom: 30px;
+        font-size: 8px;
+    }
+    .button-two{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+
+    .fa-desktop , .fa-figma, .fa-people-arrows{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+    
+    .card-contetnt p {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .card .button {
+        padding: 10px 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
 
 
 /* 
